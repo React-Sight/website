@@ -42,7 +42,7 @@
 img{ max-width:100%;}
 
 a, a:hover, a:active{ outline:0px !important}
-
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
@@ -516,13 +516,13 @@ img {
 
 /* Talk Business
 ---------------------------------*/
-.business-talking{
-	background:url(../img/section-bg2.jpg) top center no-repeat;
+.typing{
+	/* background:url(../img/section-bg2.jpg) top center no-repeat; */
+	background-color: #fafafa;
 	background-size:cover;
-	padding:60px 0 10px;
-	text-align:center;
+	/* text-align:center; */
 }
-.business-talking h2{
+/* .business-talking h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
 	padding:0;
@@ -530,7 +530,7 @@ img {
 	text-transform:uppercase;
 	font-size:42px;
 	color:#fff;
-}
+} */
 
 
 /* Contact
@@ -793,4 +793,34 @@ img {
 .delay-12s { 
 	animation-delay: 1.2s; 
 	-webkit-animation-delay: 1.2s; 
+}
+
+
+/*Typing CSS*/
+
+
+/* .hidden {
+  opacity:0;
+} */
+
+.console-container {
+  font-size:50px;
+  text-align:center;
+  height:200px;
+  width:1000px;
+  display:block;
+  /* position:absolute; */
+  color:black;
+  /* top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto; */
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
 }

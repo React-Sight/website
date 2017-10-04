@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, maximum-scale=1">
 
   <title>Homepage</title>
-  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="img/small-logo.png" type="image/png">
   <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -50,7 +50,7 @@
       <ul class="we-create animated fadeInUp delay-1s">
         <li>A Tool for Seeing React Applications</li>
       </ul>
-      <a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
+      <a id="get-started-btn" class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
     </div>
   </header>
   <!--header-end-->
@@ -76,12 +76,12 @@
     <!--main-section-start-->
     <div class="container">
       <h2>Getting Started</h2>
+      <brr>
       <div class="row">
         <div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
           <div class="service-list">
             <div class="service-list-col1">
-              <img src="img/npm5.svg" alt="Import from NPM" >
-              <!-- <i class="fa-paw"></i> -->
+              <img id="npm-logo" src="img/npm5.svg" alt="Import from NPM">
             </div>
             <div class="service-list-col2">
               <h3>Install from NPM</h3>
@@ -90,7 +90,7 @@
           </div>
           <div class="service-list">
             <div class="service-list-col1">
-              <i class="fa-gear"></i>
+              <img id="chrome-logo" src="img/chrome-logo.png" alt="Import from NPM">
             </div>
             <div class="service-list-col2">
               <h3>Download Chrome Extension</h3>
@@ -99,7 +99,7 @@
           </div>
           <div class="service-list">
             <div class="service-list-col1">
-              <i class="fa-apple"></i>
+              <img id="react-logo" src="img/react-logo-dark.svg" alt="Wrap your React Application" style="width: 39px;">
             </div>
             <div class="service-list-col2">
               <h3>Wrap Your Application</h3>
@@ -109,7 +109,6 @@
           <div class="service-list">
             <div class="service-list-col1">
               <img src="img/GitHub-Mark-32px.png" alt="Contribute on GitHub!">
-              <!-- <i class="fa-medkit"></i> -->
             </div>
             <div class="service-list-col2">
               <h3>Contribute on GitHub</h3>
@@ -118,15 +117,13 @@
           </div>
         </div>
         <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
-          <img src="img/macbook-pro.png" alt="">
+          <img id="testing-gif" src="img/testingDEMO.gif" alt="">
         </figure>
 
       </div>
     </div>
   </section>
   <!--main-section-end-->
-
-
 
   <section class="main-section alabaster">
     <!--main-section alabaster-start-->
@@ -144,9 +141,8 @@
               <i class="fa-magic"></i>
             </div>
             <div class="featured-box-col2 wow fadeInRight delay-02s">
-              <h3>magic of theme development</h3>
-              <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio
-                in tincidunt. </p>
+              <h3>Works with All your favorite libraries</h3>
+              <p>React-Sight supports React 14.7+ (including Fiber), React Router v4, and React Redux</p>
             </div>
           </div>
           <div class="featured-box">
@@ -155,8 +151,7 @@
             </div>
             <div class="featured-box-col2 wow fadeInRight delay-04s">
               <h3>neatly packaged</h3>
-              <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio
-                in tincidunt. </p>
+              <p>React-Sight is a light-weight, unobtrusive module that will show you how your Application is working</p>
             </div>
           </div>
           <div class="featured-box">
@@ -182,13 +177,13 @@
   <section class="main-section team" id="team">
     <!--main-section team-start-->
     <div class="container">
-      <h2>team</h2>
+      <h2>MEET THE TEAM</h2>
       <h6>Take a closer look into our amazing team. We won’t bite.</h6>
       <div class="team-leader-block clearfix">
         <div class="team-leader-box">
           <div class="team-leader wow fadeInDown delay-03s">
             <div class="team-leader-shadow"><a href="#"></a></div>
-            <img src="img/team-leader-pic1.jpg" alt="">
+            <img src="img/will-pic.jpg" alt="">
             <ul>
               <li><a href="#" class="fa-twitter"></a></li>
               <li><a href="#" class="fa-facebook"></a></li>
@@ -200,44 +195,37 @@
           <!-- WILL -->
           <h3 class="wow fadeInDown delay-03s">William He</h3>
           <span class="wow fadeInDown delay-03s">Software Engineer</span>
-          <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur
-            adipiscing elit proin consequat.</p>
+          <p class="wow fadeInDown delay-03s">All I really did was D3.</p>
         </div>
         <div class="team-leader-box">
           <div class="team-leader  wow fadeInDown delay-06s">
             <div class="team-leader-shadow"><a href="#"></a></div>
-            <img src="img/team-leader-pic2.jpg" alt="">
+            <img src="img/grant-pic.jpg" alt="">
             <ul>
-              <li><a href="#" class="fa-twitter"></a></li>
-              <li><a href="#" class="fa-facebook"></a></li>
-              <li><a href="#" class="fa-pinterest"></a></li>
-              <li><a href="#" class="fa-google-plus"></a></li>
-            </ul>
+                <li><a href="#" class="fa-github"></a></li>
+                <li><a href="#" class="fa-linkedin"></a></li>
+              </ul>
           </div>
 
           <!-- GRANT -->
           <h3 class="wow fadeInDown delay-06s">Grant Kang</h3>
           <span class="wow fadeInDown delay-06s">Software Engineer</span>
-          <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur
-            adipiscing elit proin consequat.</p>
+          <p class="wow fadeInDown delay-06s">TBH I didn't really do much on this project.</p>
         </div>
         <div class="team-leader-box">
           <div class="team-leader wow fadeInDown delay-09s">
             <div class="team-leader-shadow"><a href="#"></a></div>
-            <img src="img/team-leader-pic3.jpg" alt="">
+            <img src="img/david-img.png" alt="">
             <ul>
-              <li><a href="#" class="fa-twitter"></a></li>
-              <li><a href="#" class="fa-facebook"></a></li>
-              <li><a href="#" class="fa-pinterest"></a></li>
-              <li><a href="#" class="fa-google-plus"></a></li>
+              <li><a href="#" class="fa-github"></a></li>
+              <li><a href="#" class="fa-linkedin"></a></li>
             </ul>
           </div>
 
           <!-- DAVID -->
           <h3 class="wow fadeInDown delay-09s">David Sally</h3>
           <span class="wow fadeInDown delay-09s">Software Engineer</span>
-          <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur
-            adipiscing elit proin consequat.</p>
+          <p class="wow fadeInDown delay-09s">I made a website from a template.</p>
         </div>
       </div>
     </div>
@@ -249,15 +237,15 @@
   <section class="business-talking">
     <!--business-talking-start-->
     <div class="container">
-      <h2>TELL US WHAT YOU THINK.</h2>
+      <h2>TELL US WHAT YOU THINK!</h2>
     </div>
   </section>
   <!--business-talking-end-->
   <div class="container">
     <section class="main-section contact" id="contact">
 
-      <div class="row">
-        <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+      <div class="row" style="max-width: 600px; margin: 0 auto;">
+        <!-- <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s"> -->
           <div class="form">
 
             <div id="sendmessage">Your message has been sent. Thank you!</div>
@@ -287,13 +275,13 @@
               <div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
             </form>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
     </section>
   </div>
   <footer class="footer">
     <div class="container">
-      <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
+      <div class="footer-logo"><a href="#"><img src="img/logo.png" style="width: 400px;" alt=""></a></div>
       <span class="copyright">&copy; Knight Theme. All Rights Reserved</span>
       <div class="credits">
         <!-- 

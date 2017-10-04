@@ -146,7 +146,7 @@ color: #fff;
 
 .link{
 	padding:15px 35px;
-	background:#7cc576;
+	background: #7745B9;
 	color:#fff !important;
 	font-size:16px;
 	font-weight:400;
@@ -162,12 +162,11 @@ color: #fff;
 }
 .link:hover {
 	text-decoration:none;
-	color:#7cc576 !important;
-	background:#fff;
+	background: #63B9E6;
 }
 
 .link:active, .link:focus {
-	background: #7cc576;
+	background: #7745B9;
 	text-decoration:none;
 	color:#fff !important;
 }
@@ -179,7 +178,7 @@ color: #fff;
 	border-bottom:1px solid #dddddd;
 	box-shadow:0 4px 5px -3px #ececec;
 	position:relative;
-	background:#fff;
+	background-color: #fafafa;
 }
 .main-nav{
 	text-align:center;
@@ -220,6 +219,24 @@ color: #fff;
 
 /* Services
 ---------------------------------*/
+
+#npm-logo {
+	margin-left: -15px;
+}
+
+#chrome-logo{
+	margin-left: -1px;
+	width: 36px;
+}
+
+#react-logo{
+	width: 37px;
+	margin-left: -3px;
+}
+
+#testing-gif{
+	max-width:90%;
+}
 
 .service-list{
 	padding:0 0 0 0;
@@ -398,98 +415,6 @@ img {
 .main-section.paddind{
 	padding-bottom:60px;
 }
-
-/* Clients
----------------------------------*/
-.client-part{
-	background:url(../img/section-bg1.jpg) center center no-repeat;
-	background-size:cover;
-	padding:55px 0;
-	text-align:center;
-}
-.client-part-haead{
-	color:#fdfdfd;
-	font-size:28px;
-	line-height:41px;
-	margin:30px 0 10px;
-	font-family: ''Open Sans',sans-serif';
-	font-style: italic;
-}
-.client{
-	padding:0;
-	margin:20px 0 0;
-	list-style:none;
-	text-align:center;
-}
-.client li{
-	display:inline;
-	margin:0 15px;
-}
-.client li a{
-	display:inline-block;
-}
-.client li a img{
-	margin-bottom:15px;
-	border-radius:50%;
-}
-.client li a:hover{
-	text-decoration:none;
-}
-.client li a h3{
-	color:#ffffff;
-}
-.client li a span{
-	color:#f1f1f1;
-}
-.quote-right{
-	font-style:normal;
-	width:68px;
-	height:68px;
-	margin:0 auto;
-	border:2px solid #7cc576;
-	border-radius:50%;
-	display:block;
-	line-height:68px;
-	text-align:center;
-	font-size:27px;
-	color:#7cc576;
-	cursor: pointer;
-	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
-}
-
-.quote-right:hover{
-color: #fff;
-border: 2px solid #fff;
-}
-
-.c-logo-part{
-	background:#7cc576;
-	padding:25px 0;
-    filter: alpha(opacity=60);
-}
-.c-logo-part ul{
-	padding:0;
-	margin:0;
-	list-style:none;
-	text-align:center;
-}
-.c-logo-part ul li{
-	display:inline;
-	margin:0 25px;
-}
-.c-logo-part ul a{
-	display:inline-block;
-	margin: 0 20px;
-}
-.main-section.team{
-	padding:85px 0;
-}
-.main-section.team h6{
-	margin-bottom:40px;
-}
-
 
 /* Team
 ---------------------------------*/

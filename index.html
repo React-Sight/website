@@ -32,6 +32,8 @@
 
   <!-- load the d3.js library -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="js/d3-zoomer.js"></script>
+
   <!-- Draw Tree -->
   <script type="text/javascript" src="js/drawTree.js"></script>
 
@@ -175,13 +177,62 @@
     </div>
   </section>
   <!--main-section alabaster-end-->
+
+
+
   <section class="main-section alabaster">
     <!--main-section alabaster-start-->
-    <div class="container">
-      <div class="row">
+    <h2>DEMO</h2>    
+    <div id="wrapper">
         <div class='tree'></div>
+        
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand">
+            <a href="#">React Sight</a>
+          </li>
+          <li id="button-container">
+            <input id='router-btn' type='checkbox' unchecked>
+            <label for="router-btn" id="textrouter">Hide Router</label>
+          </li>
+          <li id="button-container">
+            <input id='dom-btn' type='checkbox' unchecked>
+            <label for="dom-btn" id="textrouter">Hide DOM</label>
+          </li>
+          <li id="button-container">
+            <input id='redux-btn' type='checkbox' unchecked>
+            <label for="redux-btn" id="textrouter">Hide Redux</label>
+          </li>
+
+          <li id='sliders-container'>
+            <p for="vSlider">Horizontal Spacing</p>
+            <input class="range-slider" type="range" min="0" max="20" value="10" id="hSlider">
+            <p for="hSlider">Vertical Spacing</p>
+            <input class="range-slider" type="range" min="0" max="20" value="10" id="vSlider">
+          </li>
+          <br>
+          <li id='store-container'>
+            <h2>Store</h2>
+            <div id="store"></div>
+            <br>
+          </li>
+          <li id='state-container'>
+            <h2>State</h2>
+            <div id='state'></div>
+            <br>
+          </li>
+          <li id='props-container'>
+            <h2>Props</h2>
+            <div id='props'></div>
+            <br>
+          </li>
+        </ul>
       </div>
-    </div>
+
+      <!-- <div class="row"> -->
+      </div>
+    <!-- </div> -->
+
   </section>
 
   <!--main-section-end-->
@@ -246,10 +297,10 @@
 
 
 
-  <section class="business-talking">
+  <section class="typing">
     <!--business-talking-start-->
-    <div class="container">
-      <h2>TELL US WHAT YOU THINK!</h2>
+    <div class='console-container'><span id='text'></span>
+      <div class='console-underscore' id='console'>&#95;</div>
     </div>
   </section>
   <!--business-talking-end-->
@@ -398,6 +449,7 @@
 
     });
   </script>
+  <script src='./js/typing.js'></script>
 
 </body>
 

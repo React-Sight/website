@@ -92,14 +92,14 @@ document.addEventListener('DOMContentLoaded', () => {
         d.children = d._children;
         d._children = null;
       }
-      d3.selectAll("text").attr("class", "text");
+      // d3.selectAll("text").attr("class", "text");
       update(d);
     }
 
     console.log('Updating Tree with current source...', source)
 
-    // treemap = d3.tree()
-    //   .nodeSize([hSlider * 5, hSlider * 5])
+    treemap = d3.tree()
+      .nodeSize([hSlider * 5, hSlider * 5])
 
     // Assigns the x and y position for the nodes
     var treeData = treemap(root);
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update the nodes...
     var node = svg.selectAll('g.node')
-      .data(nodes, function (d) { return d.id || (d.id = ++i); })
+      .data(nodes, function(d) {return d.id || (d.id = ++i); });
 
     // Remove any exiting nodes
     var nodeExit = node.exit().transition()
@@ -135,9 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nodeEnter.append('circle')
       .attr('class', 'node')
       .attr('r', 5)
-      .style("fill", function (d) {
-        return d._children ? "lightsteelblue" : "#fff"
-      })
+      .style('fill', d => d._children ? 'lightsteelblue' : '#fff')
       .style('pointer-events', 'visible')
 
     // Add labels for the nodes
@@ -163,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     nodeExit.select('circle')
       .attr('r', 1e-6);
+      
 
 
     // On exit reduce the opacity of text labels
@@ -173,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update the links...
     var link = svg.selectAll('path.link')
-      .data(links, function (d) { return d.id; });
+      .data(links, d => d.id);
 
     // Enter any new links at the parent's previous position.
     var linkEnter = link.enter().insert('path', "g")
@@ -188,13 +187,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Transition back to the parent element position
     linkUpdate.transition()
-      .duration(duration)
-      .attr('d', function (d) { return diagonal(d, d.parent) });
+      .duration(100)
+      .attr('d', d => diagonal(d, d.parent));
 
     // Remove any exiting links
     var linkExit = link.exit().transition()
-      .duration(duration)
-      .attr('d', function (d) {
+      .duration(200)
+      .attr('d', d => {
         var o = { x: source.x, y: source.y }
         return diagonal(o, o)
       })

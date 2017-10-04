@@ -28,7 +28,12 @@
   <script type="text/javascript" src="js/jquery.isotope.js"></script>
   <script type="text/javascript" src="js/wow.js"></script>
   <script type="text/javascript" src="js/classie.js"></script>
-  <script src="contactform/contactform.js"></script>
+  <!-- <script src="contactform/contactform.js"></script> -->
+
+  <!-- load the d3.js library -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <!-- Draw Tree -->
+  <script type="text/javascript" src="js/drawTree.js"></script>
 
   <!-- =======================================================
     Theme Name: Knight
@@ -51,6 +56,7 @@
         <li>A Tool for Seeing React Applications</li>
       </ul>
       <a id="get-started-btn" class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
+      <!-- <img class="header-img" src="../img/pw_maze_black_2X.png"> -->
     </div>
   </header>
   <!--header-end-->
@@ -77,50 +83,49 @@
     <div class="container">
       <h2>Getting Started</h2>
       <brr>
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
-          <div class="service-list">
-            <div class="service-list-col1">
-              <img id="npm-logo" src="img/npm5.svg" alt="Import from NPM">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+            <div class="service-list">
+              <div class="service-list-col1">
+                <img id="npm-logo" src="img/npm5.svg" alt="Import from NPM">
+              </div>
+              <div class="service-list-col2">
+                <h3>Install from NPM</h3>
+                <p>npm install --save-dev react-sight</p>
+              </div>
             </div>
-            <div class="service-list-col2">
-              <h3>Install from NPM</h3>
-              <p>npm install --save-dev react-sight</p>
+            <div class="service-list">
+              <div class="service-list-col1">
+                <img id="chrome-logo" src="img/chrome-logo.png" alt="Import from NPM">
+              </div>
+              <div class="service-list-col2">
+                <h3>Download Chrome Extension</h3>
+                <p>LINK TO CHROME STORE</p>
+              </div>
+            </div>
+            <div class="service-list">
+              <div class="service-list-col1">
+                <img id="react-logo" src="img/react-logo-dark.svg" alt="Wrap your React Application" style="width: 39px;">
+              </div>
+              <div class="service-list-col2">
+                <h3>Wrap Your Application</h3>
+                <p>Simply wrap your Application where you render</p>
+              </div>
+            </div>
+            <div class="service-list">
+              <div class="service-list-col1">
+                <img src="img/GitHub-Mark-32px.png" alt="Contribute on GitHub!">
+              </div>
+              <div class="service-list-col2">
+                <h3>Contribute on GitHub</h3>
+                <a href="https://github.com/React-Sight/React-Sight">https://github.com/React-Sight/React-Sight</a>
+              </div>
             </div>
           </div>
-          <div class="service-list">
-            <div class="service-list-col1">
-              <img id="chrome-logo" src="img/chrome-logo.png" alt="Import from NPM">
-            </div>
-            <div class="service-list-col2">
-              <h3>Download Chrome Extension</h3>
-              <p>LINK TO CHROME STORE</p>
-            </div>
-          </div>
-          <div class="service-list">
-            <div class="service-list-col1">
-              <img id="react-logo" src="img/react-logo-dark.svg" alt="Wrap your React Application" style="width: 39px;">
-            </div>
-            <div class="service-list-col2">
-              <h3>Wrap Your Application</h3>
-              <p>Simply wrap your Application where you render</p>
-            </div>
-          </div>
-          <div class="service-list">
-            <div class="service-list-col1">
-              <img src="img/GitHub-Mark-32px.png" alt="Contribute on GitHub!">
-            </div>
-            <div class="service-list-col2">
-              <h3>Contribute on GitHub</h3>
-              <p>https://github.com/React-Sight/React-Sight</p>
-            </div>
-          </div>
+          <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
+            <img id="testing-gif" src="img/testingDEMO.gif" alt="">
+          </figure>
         </div>
-        <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
-          <img id="testing-gif" src="img/testingDEMO.gif" alt="">
-        </figure>
-
-      </div>
     </div>
   </section>
   <!--main-section-end-->
@@ -170,7 +175,14 @@
     </div>
   </section>
   <!--main-section alabaster-end-->
-
+  <section class="main-section alabaster">
+    <!--main-section alabaster-start-->
+    <div class="container">
+      <div class="row">
+        <div class='tree'></div>
+      </div>
+    </div>
+  </section>
 
   <!--main-section-end-->
 
@@ -186,8 +198,8 @@
             <div class="team-leader-shadow"><a href="#"></a></div>
             <img src="img/will-pic.jpg" alt="William He">
             <ul>
-                <li><a href="https://github.com/hewilliam" class="fa-github"></a></li>
-                <li><a href="https://www.linkedin.com/in/william-he-a1177484/" class="fa-linkedin"></a></li>
+              <li><a href="https://github.com/hewilliam" class="fa-github"></a></li>
+              <li><a href="https://www.linkedin.com/in/william-he-a1177484/" class="fa-linkedin"></a></li>
             </ul>
           </div>
 
@@ -202,9 +214,9 @@
             <div class="team-leader-shadow"><a href="#"></a></div>
             <img src="img/grant-pic.jpg" alt="Grant Kang">
             <ul>
-                <li><a href="https://github.com/Grant05" class="fa-github"></a></li>
-                <li><a href="https://www.linkedin.com/in/grant-kang-172b59148/" class="fa-linkedin"></a></li>
-              </ul>
+              <li><a href="https://github.com/Grant05" class="fa-github"></a></li>
+              <li><a href="https://www.linkedin.com/in/grant-kang-172b59148/" class="fa-linkedin"></a></li>
+            </ul>
           </div>
 
           <!-- DAVID -->
@@ -246,35 +258,35 @@
 
       <div class="row" style="max-width: 600px; margin: 0 auto;">
         <!-- <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s"> -->
-          <div class="form">
+        <div class="form">
 
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
-                />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"
-                />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4"
-                  data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
-                  placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
+              />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"
+              />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4"
+                data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
+                placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
 
-              <div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
-            </form>
-          </div>
+            <div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
+          </form>
+        </div>
         <!-- </div> -->
       </div>
     </section>

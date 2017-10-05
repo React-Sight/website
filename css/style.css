@@ -442,7 +442,7 @@ color: #fff;
 ---------------------------------*/
 .typing{
 	/* background:url(../img/section-bg2.jpg) top center no-repeat; */
-	background-color: #fafafa;
+	background-color: black;
 	background-size:cover;
 	/* text-align:center; */
 }
@@ -672,13 +672,14 @@ color: #fff;
 
 /*Typing CSS*/
 .console-container {
-  font-size:50px;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size:15px;
   text-align:center;
-  height:200px;
+  height:25px;
   width:1000px;
   display:block;
   /* position:absolute; */
-  color:black;
+  color:white;
   /* top:0;
   bottom:0;
   left:0;

@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Visit github.com/react-sight', 'Thanks for checking us out! 😀'], 'text',['tomato','rebeccapurple','lightblue']);
+consoleText(['Visit github.com/react-sight', 'Thanks for checking us out!'], 'text',['tomato','rebeccapurple','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -9,7 +9,7 @@ function consoleText(words, id, colors) {
   var x = 1;
   var waiting = false;
   var target = document.getElementById(id)
-  target.setAttribute('style', 'color:' + colors[0])
+  // target.setAttribute('style', 'color:' + colors[0])
   window.setInterval(function() {
 
     if (letterCount === 0 && waiting === false) {
@@ -21,7 +21,7 @@ function consoleText(words, id, colors) {
         var usedWord = words.shift();
         words.push(usedWord);
         x = 1;
-        target.setAttribute('style', 'color:' + colors[0])
+        // target.setAttribute('style', 'color:' + colors[0])
         letterCount += x;
         waiting = false;
       }, 1000)

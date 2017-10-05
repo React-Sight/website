@@ -829,7 +829,8 @@ color: #fff;
 
 #state, #props {
   font-family: Courier New, Courier, monospace;
-  color: white;
+	color: black;
+	font-weight: bold;
 }
 
 .range-slider {
@@ -855,4 +856,10 @@ color: #fff;
 
 .range-slider::-webkit-slider-thumb:hover {
   background: #1abc9c;
+}
+
+.json-formatter-constructor-name {
+	color: black;
+	font-weight: bold;
+	font-size: 1.3em;
 }

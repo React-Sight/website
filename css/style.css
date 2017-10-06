@@ -643,10 +643,11 @@ color: #fff;
 
 /* D3 Properties */
 .tree {
-	border: 1px solid red;
+	border: 1px solid black;
 	width: 100%;
 	float: right;
-  background-color: #fff;
+	background-color: #fff;
+	border-radius: 20px;
 }
 
 #demo-container {
@@ -680,7 +681,8 @@ color: #fff;
   font-size:15px;
   text-align:center;
   height:25px;
-  width:1000px;
+	/* width:1000px; */
+	width: 100%;
   display:block;
   /* position:absolute; */
   color:white;
@@ -788,7 +790,7 @@ color: #fff;
 .store {
   height: 200px;
   width: 200px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 #button-container {
@@ -899,3 +901,10 @@ color: #fff;
 	padding: 0;
 }
 
+#demo {
+	background: #fff;
+}
+
+#team {
+	background: #fafafa;
+}

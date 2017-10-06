@@ -1,24 +1,42 @@
 import JSONFormatter from 'json-formatter-js'
 import datas from './data.js'
 
-function updateState(state) {
+function updateState(state, props) {
+  console.log('props', props)
   const stateFormatter = new JSONFormatter(state, 1, {
     hoverPreviewEnabled: false,
     hoverPreviewArrayCount: 10,
     hoverPreviewFieldCount: 5,
-    // theme: 'dark',
+    animateOpen: true,
+    animateClose: true
+  })
+
+  // props
+  const propsFomatter = new JSONFormatter(props, 1, {
+    hoverPreviewEnabled: false,
+    hoverPreviewArrayCount: 100,
+    hoverPreviewFieldCount: 5,
+    theme: 'dark',
     animateOpen: true,
     animateClose: true
   })
 
   const stateNode = document.getElementById('state');
-  stateNode.innerHTML = '';
+  const propsNode = document.getElementById('props')
 
+  stateNode.innerHTML = '';
+  propsNode.innerHTML = ''
 
   if (state == null || state == undefined) {
     stateNode.appendChild(document.createTextNode('None'))
   } else {
     stateNode.appendChild(stateFormatter.render())
+  }
+
+  if (props == null || props == undefined) {
+    propsNode.appendChild(document.createTextNode('None'))
+  } else {
+    propsNode.appendChild(propsFomatter.render())
   }
 }
 
@@ -42,9 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     else drawChart(datas.allData)
 
     // let treeData = datas.allData
-    // if (hideRedux) datas = filterRedux(treeData)
-    // if (hideDOM) datas = filterDOM(treeData)
-    // if (hideRouter) datas = filterRouter(treeData)
+    // if (hideRedux) treeData = filterRedux(treeData)
+    // if (hideDOM) treeData = filterDOM(treeData)
+    // if (hideRouter) treeData = filterRouter(treeData)
     // drawChart(treeData)
   }
 
@@ -138,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .style('fill', d => d._children ? 'lightsteelblue' : '#fff')
       .style('pointer-events', 'visible')
       .on('mouseover', d => {
-        updateState(d.data.state)
+        updateState(d.data.state, d.data.props)
       })
 
     // Add labels for the nodes

@@ -8,7 +8,8 @@
   <title>Homepage</title>
   <link rel="icon" href="img/small-logo.png" type="image/png">
   <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600'
     rel='stylesheet' type='text/css'>
@@ -50,14 +51,14 @@
       <figure class="logo animated fadeInDown delay-07s">
         <a href="#"><img src="img/logo.png" alt=""></a>
       </figure>
-      <h1 class="animated fadeInDown delay-07s">React Sight</h1>
+      <h1 class="animated fadeInDown delay-07s" id="logo-header" >React Sight</h1>
       <ul class="we-create animated fadeInUp delay-1s">
-        <li>A Tool for Seeing React Applications</li><br/><br/><br/>
+        <li id="header-description">A Tool for Seeing React Applications</li><br/><br/><br/>
         <a class="github-button" href="https://github.com/React-Sight" data-size="large" aria-label="Follow @React-Sight on GitHub">Follow @React-Sight</a>
         <a class="github-button" href="https://github.com/React-Sight/React-SightChromeExt" data-size="large" data-show-count="true"
           aria-label="Star React-Sight/React-SightChromeExt on GitHub">Star</a>
       </ul>
-      <a id="get-started-btn" class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
+      <a id="get-started-btn" class="link animated fadeInUp delay-1s servicelink" href="#getting-started">Get Started</a>
       <!-- <img class="header-img" src="../img/pw_maze_black_2X.png"> -->
     </div>
   </header>
@@ -65,12 +66,14 @@
 
   <nav class="main-nav-outer" id="test">
     <!--main-nav-start-->
-    <div class="container">
+    <div class="container" id="header-container">
       <ul class="main-nav">
         <li><a href="#header">Home</a></li>
         <!-- Place this tag in your head or just before your close body tag. -->
         <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#features">Features</a></li>
         <li class="small-logo"><a href="#header"><img src="img/logo.png" alt="" style="width: 100px;"></a></li>
+        <li><a href="#demo">Demo</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -136,7 +139,7 @@
   </section>
   <!--main-section-end-->
 
-  <section class="main-section alabaster">
+  <section class="main-section alabaster" id="features">
     <!--main-section alabaster-start-->
     <div class="container">
       <div class="row">
@@ -182,61 +185,62 @@
   <!--main-section alabaster-end-->
 
 
-
-  <section class="main-section alabaster">
+  <section class="main-section alabaster" id="demo">
     <!--main-section alabaster-start-->
-    <h2>DEMO</h2>
-    <div id="wrapper">
-      <div class='tree'></div>
+    <div class="container">
+      <div class="row">
+          <h2>DEMO</h2>
+          
+        <figure class="col-lg-5 col-sm-4 wow fadeInLeft" id="demo-sidepanel">
+          <!-- <img src="img/iphone.png" alt=""> -->
+          <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+              <a href="#">React Sight</a>
+            </li>
+            <li id="button-container">
+              <input id='router-btn' type='checkbox' unchecked>
+              <label for="router-btn" id="textrouter">Hide Router</label>
+            </li>
+            <li id="button-container">
+              <input id='dom-btn' type='checkbox' unchecked>
+              <label for="dom-btn" id="textrouter">Hide DOM</label>
+            </li>
+            <li id="button-container">
+              <input id='redux-btn' type='checkbox' unchecked>
+              <label for="redux-btn" id="textrouter">Hide Redux</label>
+            </li>
 
-      <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-          <li class="sidebar-brand">
-            <a href="#">React Sight</a>
-          </li>
-          <li id="button-container">
-            <input id='router-btn' type='checkbox' unchecked>
-            <label for="router-btn" id="textrouter">Hide Router</label>
-          </li>
-          <li id="button-container">
-            <input id='dom-btn' type='checkbox' unchecked>
-            <label for="dom-btn" id="textrouter">Hide DOM</label>
-          </li>
-          <li id="button-container">
-            <input id='redux-btn' type='checkbox' unchecked>
-            <label for="redux-btn" id="textrouter">Hide Redux</label>
-          </li>
-
-          <li id='sliders-container'>
-            <p for="vSlider">Horizontal Spacing</p>
-            <input class="range-slider" type="range" min="0" max="20" value="10" id="hSlider">
-            <p for="hSlider">Vertical Spacing</p>
-            <input class="range-slider" type="range" min="0" max="20" value="10" id="vSlider">
-          </li>
-          <br>
-          <li id='store-container'>
-            <h2>Store</h2>
-            <div id="store"></div>
+            <li id='sliders-container'>
+              <p for="vSlider">Horizontal Spacing</p>
+              <input class="range-slider" type="range" min="0" max="20" value="10" id="hSlider">
+              <p for="hSlider">Vertical Spacing</p>
+              <input class="range-slider" type="range" min="0" max="20" value="10" id="vSlider">
+            </li>
             <br>
-          </li>
-          <li id='state-container'>
-            <h2>State</h2>
-            <div id='state'></div>
-            <br>
-          </li>
-          <li id='props-container'>
-            <h2>Props</h2>
-            <div id='props'></div>
-            <br>
-          </li>
-        </ul>
+            <li id='store-container'>
+              <h2 class="container-header">Store</h2>
+              <div id="store"></div>
+              <br>
+            </li>
+            <li id='state-container'>
+              <h2 class="container-header">State</h2>
+              <div id='state'></div>
+              <br>
+            </li>
+            <li id='props-container'>
+              <h2 class="container-header">Props</h2>
+              <div id='props'></div>
+              <br>
+            </li>
+          </ul>
+        </figure>
+        <div class="col-lg-7 col-sm-8 featured-work" id="demo-container">
+          <div class='tree'></div>
+        </div>
       </div>
-
-      <!-- <div class="row"> -->
     </div>
-    <!-- </div> -->
-
   </section>
+
 
   <!--main-section-end-->
 
@@ -351,7 +355,7 @@
     </div>
   </section>
   <script type="text/javascript" src="build/bundle.js"></script>
-  
+
   <script type="text/javascript">
     $(document).ready(function (e) {
       $('#test').scrollToFixed();

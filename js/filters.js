@@ -23,24 +23,24 @@ const recurFilter = (node, parentArr, filter) => {
 
 /** Removes Redux components from tree */
 function filterRedux(data) {
-  const filtered = { data: [] }
+  const filtered = []
   const names = ['Provider', 'Connect'];
-  recurFilter(data.data[0], filtered.data, names)
+  recurFilter(data, filtered, names)
   return filtered;
 }
 
 /** Removes ReactRouter v4 components from JSON */
 function filterRouter(data) {
-  const filtered = { data: [] }
+  const filtered = []
   const names = ['BrowserRouter', 'Router', 'Switch', 'Route', 'Link', 'StaticRouter', 'NavLink', 'Redirect', 'MemoryRouter', 'Prompt', 'NavLink'];
-  recurFilter(data.data[0], filtered.data, names)
+  recurFilter(data, filtered, names)
   return filtered;
 }
 
 /** Removes Basic DOM components from tree */
 function filterDOM(data) {
-  const filtered = { data: [] }
+  const filtered = []
   const names = ['p', 'a', 'div', 'li', 'ul', 'input', 'button', 'h1', 'h2', 'h3', 'h4', 'br', 'img', 'form'];
-  recurFilter(data.data[0], filtered.data, names)
+  recurFilter(data, filtered, names)
   return filtered;
 }

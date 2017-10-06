@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .on("zoom", zoomed);
 
   var svg = d3.select(".tree").append("svg")
-    .attr("width", '100%')
+    .attr("width", 'auto')
     .attr("height", '500')
     .attr('viewBox', '0 0 ' + Math.min(width, 500) + ' ' + Math.min(width, 500))
     .attr('preserveAspectRatio', 'xMinYMin')

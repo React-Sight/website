@@ -136,6 +136,9 @@ function update(source) {
     .attr('r', 5)
     .style('fill', d => d._children ? 'lightsteelblue' : '#fff')
     .style('pointer-events', 'visible')
+    .on('mouseover', d => {
+      updateState(d.data.state, d.data.props);
+    })
 
   // Add labels for the nodes
   nodeEnter.append('text')

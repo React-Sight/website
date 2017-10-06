@@ -643,11 +643,10 @@ color: #fff;
 
 /* D3 Properties */
 .tree {
-	border: 1px solid red;
-	/* width: auto;
-	float: right; */
+	border: 1px solid black;
   background-color: #fff;
-  display: flex;
+	display: flex;
+	border-radius: 20px;
 }
 
 /* #demo-container {

@@ -644,17 +644,18 @@ color: #fff;
 /* D3 Properties */
 .tree {
 	border: 1px solid red;
-	width: 100%;
-	float: right;
+	/* width: auto;
+	float: right; */
   background-color: #fff;
+  display: flex;
 }
 
-#demo-container {
-	width: 78%;
-}
+/* #demo-container {
+	width: auto;
+} */
 
 #demo-sidepanel {
-	width: 21%;
+	width: auto;
 }
 
 .node circle {
@@ -680,7 +681,7 @@ color: #fff;
   font-size:15px;
   text-align:center;
   height:25px;
-  width:1000px;
+  width:100%;
   display:block;
   /* position:absolute; */
   color:white;
@@ -898,4 +899,3 @@ color: #fff;
 	width: 100%;
 	padding: 0;
 }
-

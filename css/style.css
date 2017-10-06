@@ -649,10 +649,6 @@ color: #fff;
 	border-radius: 20px;
 }
 
-/* #demo-container {
-	width: auto;
-} */
-
 #demo-sidepanel {
 	width: auto;
 }
@@ -741,9 +737,7 @@ color: #fff;
 }
 
 .sidebar-nav > .sidebar-brand {
-  /* height: 65px; */
   font-size: 18px;
-  /* line-height: 60px; */
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -751,7 +745,6 @@ color: #fff;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-  /* color: #fff; */
   background: none;
 }
 
@@ -867,10 +860,6 @@ color: #fff;
 	font-size: 1.3em;
 }
 
-#section-demo {
-	max-height: 750px;
-	background: lightblue;
-}
 
 .container-header {
 	text-align: left;
@@ -897,4 +886,12 @@ color: #fff;
 #header-container{
 	width: 100%;
 	padding: 0;
+}
+
+#demo {
+	background: #fff;
+}
+
+#team {
+	background-color: #fafafa;
 }

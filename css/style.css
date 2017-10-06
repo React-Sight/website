@@ -51,9 +51,7 @@ a, a:hover, a:active{ outline:0px !important}
   font-style: normal;
 }
 
-.tree {
-	border: 1px solid red;
-}
+
 
 /* Primary Styles
 ---------------------------------*/
@@ -156,7 +154,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1dbff', end
 .start-button li a{
 color: #fff;
 }
-
 
 .link{
 	padding:15px 35px;
@@ -644,13 +641,20 @@ color: #fff;
 }
 
 
-
-
 /* D3 Properties */
 .tree {
-	width: 75%;
+	border: 1px solid red;
+	width: 100%;
 	float: right;
   background-color: #fff;
+}
+
+#demo-container {
+	width: 78%;
+}
+
+#demo-sidepanel {
+	width: 21%;
 }
 
 .node circle {
@@ -698,7 +702,6 @@ color: #fff;
   pointer-events: all;
 }
 
-
 /* ** SIDEBAR ** */
 #tree-demo {
 	display: flex;
@@ -707,11 +710,13 @@ color: #fff;
 .sidebar-nav {
   position: relative;
   top: 0;
-  width: 250px;
   margin: 0;
   padding: 0;
   padding-left: 2.5%;
 	list-style: none;
+	height: 100%;
+	max-height: 510px;
+	overflow: auto;
 }
 
 .sidebar-nav li {
@@ -722,15 +727,12 @@ color: #fff;
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
-  color: #999999;
 }
 
 .sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255,255,255,0.2);
+	text-decoration: none;
+	color: #999999;	
 }
-
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
@@ -738,17 +740,17 @@ color: #fff;
 }
 
 .sidebar-nav > .sidebar-brand {
-  height: 65px;
+  /* height: 65px; */
   font-size: 18px;
-  line-height: 60px;
+  /* line-height: 60px; */
 }
 
 .sidebar-nav > .sidebar-brand a {
-  color: #999999;
+	color: black;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
+  /* color: #fff; */
   background: none;
 }
 
@@ -834,7 +836,7 @@ color: #fff;
 }
 
 .range-slider {
-  width: 100%;
+  width: 80%;
   -webkit-appearance: none;
   height: 10px;
   border-radius: 5px;
@@ -863,3 +865,36 @@ color: #fff;
 	font-weight: bold;
 	font-size: 1.3em;
 }
+
+#section-demo {
+	max-height: 750px;
+	background: lightblue;
+}
+
+.container-header {
+	text-align: left;
+	padding-left: 5%;
+}
+
+#logo-header {
+	font-family: 'Roboto Slab', serif;
+}
+
+#header-description {
+	color: rgba(0, 0, 0, 0.94);
+	font-size: 18px;	
+}
+
+.main-nav li a {
+	/* margin: 17px 16px;	 */
+}
+
+.main-nav li:first-child {
+	padding-left: 0;
+}
+
+#header-container{
+	width: 100%;
+	padding: 0;
+}
+

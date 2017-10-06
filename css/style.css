@@ -643,19 +643,19 @@ color: #fff;
 
 /* D3 Properties */
 .tree {
-	border: 1px solid black;
-	width: 100%;
-	float: right;
-	background-color: #fff;
-	border-radius: 20px;
+	border: 1px solid red;
+	/* width: auto;
+	float: right; */
+  background-color: #fff;
+  display: flex;
 }
 
-#demo-container {
-	width: 78%;
-}
+/* #demo-container {
+	width: auto;
+} */
 
 #demo-sidepanel {
-	width: 21%;
+	width: auto;
 }
 
 .node circle {
@@ -681,8 +681,7 @@ color: #fff;
   font-size:15px;
   text-align:center;
   height:25px;
-	/* width:1000px; */
-	width: 100%;
+  width:100%;
   display:block;
   /* position:absolute; */
   color:white;
@@ -899,12 +898,4 @@ color: #fff;
 #header-container{
 	width: 100%;
 	padding: 0;
-}
-
-#demo {
-	background: #fff;
-}
-
-#team {
-	background: #fafafa;
 }

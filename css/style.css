@@ -895,3 +895,9 @@ color: #fff;
 #team {
 	background-color: #fafafa;
 }
+
+#floatinggif {
+	width: 60px;
+	display:block;
+    margin:auto;
+}

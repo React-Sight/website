@@ -19,7 +19,10 @@
     crossorigin="anonymous">
 
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+  <!-- <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> -->
+
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  
   <link href="css/responsive.css" rel="stylesheet" type="text/css">
   <link href="css/animate.css" rel="stylesheet" type="text/css">
 
@@ -86,23 +89,54 @@
         <div class="row">
           <div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
 
-
+            <!-- install react dev tools -->
             <div class="service-list">
               <div class="service-list-col1">
-                <img id="chrome-logo" src="img/chrome-logo.png" alt="Import from NPM">
+                <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
               </div>
               <div class="service-list-col2">
-                <h3>Install for Chrome</h3>
-                1. Enable <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">React Dev Tools</a> to Chrome.<br/><br/>
-                2. Install <a href="https://chrome.google.com/webstore/detail/react-sight/aalppolilappfakpmdfdkpppdnhpgifn">React Sight</a> from the Chrome web store<br/><br/>
-                3. Run your React application, or open (almost!) any website running React!<br/><br/>
-                4. Open Chrome Developer Tools (cmd+opt+j) -> React Sight panel<br/><br/>
+                <h3>Enable React DevTools</h3>
+                React Sight requires <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">React Dev Tools</a> for reading information about your App. Simply add to Chrome if you don't have it installed
               </div>
             </div>
 
+            <!-- install react sight -->
+            <div class="service-list">
+                <div class="service-list-col1">
+                  <i class="fa fa-chrome" aria-hidden="true"></i>
+                </div>
+                <div class="service-list-col2">
+                  <h3>Add React Sight to Chrome</h3>
+                  Install <a href="https://chrome.google.com/webstore/detail/react-sight/aalppolilappfakpmdfdkpppdnhpgifn">React Sight</a> from the Chrome web store.<br>
+                  For local projects, check 'Allow access to file URLs' on the extensions page
+                </div>
+              </div>
+
+            <!-- Run your appllication -->
+            <div class="service-list">
+                <div class="service-list-col1">
+                  <i class="fa fa-desktop" aria-hidden="true"></i>
+                </div>
+                <div class="service-list-col2">
+                  <h3>Run your Application</h3>
+                  Open your React application, or open (almost!) any website running React!
+                </div>
+              </div>
+
+            <!-- Run your appllication -->
+            <div class="service-list">
+                <div class="service-list-col1">
+                  <i class="fa fa-wrench" aria-hidden="true"></i>
+                </div>
+                <div class="service-list-col2">
+                  <h3>Open React Sight</h3>
+                  Open the Chrome Developer Tools and click the React Sight panel
+                </div>
+              </div>
+              
             <div class="service-list">
               <div class="service-list-col1">
-                <img src="img/GitHub-Mark-32px.png" alt="Contribute on GitHub!">
+                  <i class="fa fa-github" aria-hidden="true"></i>                  
               </div>
               <div class="service-list-col2">
                 <h3>Contribute on GitHub</h3>
@@ -128,22 +162,34 @@
         <div class="col-lg-7 col-sm-8 featured-work">
           <h2>Features</h2>
           <P class="padding-b"></P>
+
           <div class="featured-box">
             <div class="featured-box-col1 wow fadeInRight delay-02s">
               <i class="fa-magic"></i>
             </div>
             <div class="featured-box-col2 wow fadeInRight delay-02s">
-              <h3>Works with All your favorite libraries</h3>
-              <p>React-Sight supports React 14.7+ (including Fiber), React Router v4, and React Redux</p>
+              <h3>No Set up required</h3>
+              <p>React Sight requires NO modification to your codebase, so using it is as simple as adding our Chrome Extension</p>
             </div>
           </div>
+
+          <div class="featured-box">
+              <div class="featured-box-col1 wow fadeInRight delay-02s">
+                <i class="fa-flash"></i>
+              </div>
+              <div class="featured-box-col2 wow fadeInRight delay-02s">
+                <h3>Works with All your favorite libraries</h3>
+                <p>React-Sight supports React 14.7+ (including Fiber), React Router v4, React Redux, and more</p>
+              </div>
+            </div>
+
           <div class="featured-box">
             <div class="featured-box-col1 wow fadeInRight delay-04s">
-              <i class="fa-gift"></i>
+              <i class="fa-rocket"></i>
             </div>
             <div class="featured-box-col2 wow fadeInRight delay-04s">
-              <h3>neatly packaged</h3>
-              <p>React-Sight is a light-weight, unobtrusive module that will show you how your Application is working</p>
+              <h3>Built for Speed</h3>
+              <p>React-Sight is light-weight and unobtrusive, and will show you how your Application is working</p>
             </div>
           </div>
           <div class="featured-box">

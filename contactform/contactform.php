@@ -7,7 +7,7 @@
 /***************** Configuration *****************/
 
 // Enter your email, where you want to receive the messages.
-$contact_email_to = "";
+$contact_email_to = "reactsight@gmail.com";
 
 // Subject prefix
 $contact_subject_prefix = "Contat Form Message: ";

@@ -7,10 +7,10 @@
 /***************** Configuration *****************/
 
 // Enter your email, where you want to receive the messages.
-$contact_email_to = "reactsight@gmail.com";
+$contact_email_to = "hello@reactsight.com";
 
 // Subject prefix
-$contact_subject_prefix = "Contat Form Message: ";
+$contact_subject_prefix = "Contact Form Message: ";
 
 // Name too short error text
 $contact_error_name = "Name is too short or empty!";

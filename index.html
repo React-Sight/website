@@ -37,7 +37,8 @@
   <script type="text/javascript" src="js/jquery.isotope.js"></script>
   <script type="text/javascript" src="js/wow.js"></script>
   <script type="text/javascript" src="js/classie.js"></script>
-  <script src="contactform/contactform.js"></script>
+  <!-- disable contact form for github pages, replace with free formspree.io -->
+  <!-- <script src="contactform/contactform.js"></script> --> 
 
   <!-- load the d3.js library -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -54,7 +55,9 @@
       <h1 class="animated fadeInDown delay-07s" id="logo-header">React Sight</h1>
       <ul class="we-create animated fadeInUp delay-1s">
         <li id="header-description">Visualize your React applications</li><br/><br/><br/>
-        <a class="github-button" href="https://github.com/React-Sight/React-Sight" data-size="large" aria-label="Follow @React-Sight on GitHub">Follow @React-Sight</a>
+        <a class="github-button" href="https://github.com/React-Sight/React-Sight" data-size="large" aria-label="Follow @React-Sight on GitHub">
+          Follow @React-Sight
+        </a>
         <a class="github-button" href="https://github.com/React-Sight/React-SightChromeExt" data-size="large" data-show-count="true"
           aria-label="Star React-Sight/React-SightChromeExt on GitHub">Star</a>
       </ul>
@@ -325,7 +328,7 @@
   </section>
   <!--main-section team-end-->
 
-
+  <!-- Contact Form Start -->
   <div class="container" id="contact-container">
     <section class="main-section contact" id="contact">
       <h2>Contact</h2>
@@ -335,7 +338,7 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form method="POST" action="https://formspree.io/reactsight@gmail.com">
             <div class="form-group">
               <input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
               />
@@ -363,6 +366,7 @@
       </div>
     </section>
   </div>
+<!-- Contact Form End -->
 
   <section class="typing">
     <div class='console-container'><span id='text'></span>
@@ -462,9 +466,7 @@
     });
   </script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
   <script src='./js/typing.js'></script>
-
 
 </body>
 

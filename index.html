@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, maximum-scale=1">
-  
+
   <!-- key words -->
-  <meta name="keywords" content="React, React Sight, Developer Tool, Javascript, ES6, Chrome, Developer, React Developer, D3, Create React App, Learn programming, Visualization, React 16, React 15, React fiber, fiber, redux, react redux, router, react router, browser router, redux store, d3 tree, d3 v4, react visualizer, component visualizer, react component visualizer, react component"/>
+  <meta name="keywords" content="React, React Sight, Developer Tool, Javascript, ES6, Chrome, Developer, React Developer, D3, Create React App, Learn programming, Visualization, React 16, React 15, React fiber, fiber, redux, react redux, router, react router, browser router, redux store, d3 tree, d3 v4, react visualizer, component visualizer, react component visualizer, react component"
+  />
 
   <title>React Sight</title>
   <link rel="icon" href="img/small-logo.png" type="image/png" style="width:30%">
@@ -24,7 +25,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  
+
   <link href="css/responsive.css" rel="stylesheet" type="text/css">
   <link href="css/animate.css" rel="stylesheet" type="text/css">
 
@@ -38,7 +39,7 @@
   <script type="text/javascript" src="js/wow.js"></script>
   <script type="text/javascript" src="js/classie.js"></script>
   <!-- disable contact form for github pages, replace with free formspree.io -->
-  <!-- <script src="contactform/contactform.js"></script> --> 
+  <!-- <script src="contactform/contactform.js"></script> -->
 
   <!-- load the d3.js library -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -46,7 +47,7 @@
 </head>
 
 <body>
-  <!--header-start-->  
+  <!--header-start-->
   <header class="header" id="header">
     <div class="container">
       <figure class="logo animated fadeInDown delay-07s">
@@ -54,7 +55,12 @@
       </figure>
       <h1 class="animated fadeInDown delay-07s" id="logo-header">React Sight</h1>
       <ul class="we-create animated fadeInUp delay-1s">
-        <li id="header-description">Visualize your React applications</li><br/><br/><br/>
+        <li id="header-description">
+          Visualize your React applications
+        </li>
+        <br/>
+        <br/>
+        <br/>
         <a class="github-button" href="https://github.com/React-Sight/React-Sight" data-size="large" aria-label="Follow @React-Sight on GitHub">
           Follow @React-Sight
         </a>
@@ -66,19 +72,43 @@
   </header>
   <!--header-end-->
 
-  <!--main-nav-start-->  
+  <!--main-nav-start-->
   <nav class="main-nav-outer" id="test">
     <div class="container" id="header-container">
       <ul class="main-nav">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#getting-started">Getting Started</a></li>
-        <li><a href="#features">Features</a></li>
-        <li class="small-logo"><a href="#header"><img src="img/logo.png" alt="" style="width: 100px;"></a></li>
-        <li><a href="#demo">Demo</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#header">Home</a>
+        </li>
+        <li>
+          <a href="#getting-started">Getting Started</a>
+        </li>
+        <li>
+          <a href="#features">Features</a>
+        </li>
+        <li class="small-logo">
+          <a href="#header">
+            <img src="img/logo.png" alt="" style="width: 100px;">
+          </a>
+        </li>
+        <li>
+          <a href="#demo">
+            Demo
+        </a>
+        </li>
+        <li>
+          <a href="#team">
+            Team
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            Contact
+          </a>
+        </li>
       </ul>
-      <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+      <a class="res-nav_click" href="#">
+        <i class="fa-bars"></i>
+      </a>
     </div>
   </nav>
   <!--main-nav-end-->
@@ -86,70 +116,74 @@
   <section class="main-section" id="getting-started">
     <!--main-section-start-->
     <div class="container">
-      <h2>Getting Started</h2>
+      <h2>
+        Getting Started
+      </h2>
       <br>
-        <div class="row">
-          <div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
 
-            <!-- install react dev tools -->
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>Enable React DevTools</h3>
-                React Sight requires <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">React Dev Tools</a> for reading information about your App. Simply add to Chrome if you don't have it installed
-              </div>
+          <!-- install react dev tools -->
+          <div class="service-list">
+            <div class="service-list-col1">
+              <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
             </div>
-
-            <!-- install react sight -->
-            <div class="service-list">
-                <div class="service-list-col1">
-                  <i class="fa fa-chrome" aria-hidden="true"></i>
-                </div>
-                <div class="service-list-col2">
-                  <h3>Add React Sight to Chrome</h3>
-                  Install <a href="https://chrome.google.com/webstore/detail/react-sight/aalppolilappfakpmdfdkpppdnhpgifn">React Sight</a> from the Chrome web store.<br>
-                  For local projects, check 'Allow access to file URLs' on the extensions page
-                </div>
-              </div>
-
-            <!-- Run your appllication -->
-            <div class="service-list">
-                <div class="service-list-col1">
-                  <i class="fa fa-desktop" aria-hidden="true"></i>
-                </div>
-                <div class="service-list-col2">
-                  <h3>Run your Application</h3>
-                  Open your React application, or open (almost!) any website running React!
-                </div>
-              </div>
-
-            <!-- Run your appllication -->
-            <div class="service-list">
-                <div class="service-list-col1">
-                  <i class="fa fa-wrench" aria-hidden="true"></i>
-                </div>
-                <div class="service-list-col2">
-                  <h3>Open React Sight</h3>
-                  Open the Chrome Developer Tools and click the React Sight panel
-                </div>
-              </div>
-              
-            <div class="service-list">
-              <div class="service-list-col1">
-                  <i class="fa fa-github" aria-hidden="true"></i>                  
-              </div>
-              <div class="service-list-col2">
-                <h3>Contribute on GitHub</h3>
-                <a href="https://github.com/React-Sight/React-Sight">https://github.com/React-Sight/React-Sight</a>
-              </div>
+            <div class="service-list-col2">
+              <h3>Enable React DevTools</h3>
+              React Sight requires
+              <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">React Dev Tools</a> for reading information about your App. Simply add to Chrome if you don't have it installed
             </div>
           </div>
-          <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
-            <img id="testing-gif" src="img/testingDEMO.gif" alt="">
-          </figure>
+
+          <!-- install react sight -->
+          <div class="service-list">
+            <div class="service-list-col1">
+              <i class="fa fa-chrome" aria-hidden="true"></i>
+            </div>
+            <div class="service-list-col2">
+              <h3>Add React Sight to Chrome</h3>
+              Install
+              <a href="https://chrome.google.com/webstore/detail/react-sight/aalppolilappfakpmdfdkpppdnhpgifn">React Sight</a> from the Chrome web store.
+              <br> For local projects, check 'Allow access to file URLs' on the extensions page
+            </div>
+          </div>
+
+          <!-- Run your appllication -->
+          <div class="service-list">
+            <div class="service-list-col1">
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+            </div>
+            <div class="service-list-col2">
+              <h3>Run your Application</h3>
+              Open your React application, or open (almost!) any website running React!
+            </div>
+          </div>
+
+          <!-- Run your appllication -->
+          <div class="service-list">
+            <div class="service-list-col1">
+              <i class="fa fa-wrench" aria-hidden="true"></i>
+            </div>
+            <div class="service-list-col2">
+              <h3>Open React Sight</h3>
+              Open the Chrome Developer Tools and click the React Sight panel
+            </div>
+          </div>
+
+          <div class="service-list">
+            <div class="service-list-col1">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </div>
+            <div class="service-list-col2">
+              <h3>Contribute on GitHub</h3>
+              <a href="https://github.com/React-Sight/React-Sight">https://github.com/React-Sight/React-Sight</a>
+            </div>
+          </div>
         </div>
+        <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
+          <img id="testing-gif" src="img/testingDEMO.gif" alt="">
+        </figure>
+      </div>
     </div>
   </section>
   <!--main-section-end-->
@@ -176,14 +210,14 @@
           </div>
 
           <div class="featured-box">
-              <div class="featured-box-col1 wow fadeInRight delay-02s">
-                <i class="fa-flash"></i>
-              </div>
-              <div class="featured-box-col2 wow fadeInRight delay-02s">
-                <h3>Works with All your favorite libraries</h3>
-                <p>React-Sight supports React 14.7+ (including Fiber), React Router v4, React Redux, and more</p>
-              </div>
+            <div class="featured-box-col1 wow fadeInRight delay-02s">
+              <i class="fa-flash"></i>
             </div>
+            <div class="featured-box-col2 wow fadeInRight delay-02s">
+              <h3>Works with All your favorite libraries</h3>
+              <p>React-Sight supports React 14.7+ (including Fiber), React Router v4, React Redux, and more</p>
+            </div>
+          </div>
 
           <div class="featured-box">
             <div class="featured-box-col1 wow fadeInRight delay-04s">
@@ -281,47 +315,93 @@
         <!-- WILL -->
         <div class="team-leader-box">
           <div class="team-leader wow fadeInDown delay-03s">
-            <div class="team-leader-shadow"><a href="#"></a></div>
+            <div class="team-leader-shadow">
+              <a href="#"></a>
+            </div>
             <img src="img/will-pic.jpg" alt="William He">
             <ul>
-              <li><a href="https://github.com/hewilliam" class="fa-github"></a></li>
-              <li><a href="https://www.linkedin.com/in/william-he-a1177484/" class="fa-linkedin"></a></li>
+              <li>
+                <a href="https://github.com/hewilliam" class="fa-github"></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/william-he-a1177484/" class="fa-linkedin"></a>
+              </li>
             </ul>
           </div>
-          <h3 class="wow fadeInDown delay-03s">William He</h3>
-          <span class="wow fadeInDown delay-03s">Software Engineer @ <a href="https://www.linkedin.com/company/mindit-technologies/">MindIt Technologies</a></span>
-          <p class="wow fadeInDown delay-03s">D3 charting wizard. Basketball Fanatic. Traveling Enthusiast.</p>
+          <h3 class="wow fadeInDown delay-03s">
+            William He
+          </h3>
+          <span class="wow fadeInDown delay-03s">
+            Software Engineer @
+            <a href="https://www.linkedin.com/company/mindit-technologies/">
+              MindIt Technologies
+            </a>
+          </span>
+          <p class="wow fadeInDown delay-03s">
+            D3 charting wizard. Basketball Fanatic. Traveling Enthusiast.
+          </p>
         </div>
 
         <!-- GRANT -->
         <div class="team-leader-box">
           <div class="team-leader  wow fadeInDown delay-06s">
-            <div class="team-leader-shadow"><a href="#"></a></div>
+            <div class="team-leader-shadow">
+              <a href="#"></a>
+            </div>
             <img src="img/grant-pic.jpg" alt="Grant Kang">
             <ul>
-              <li><a href="https://github.com/Grant05" class="fa-github"></a></li>
-              <li><a href="https://www.linkedin.com/in/grant-kang-172b59148/" class="fa-linkedin"></a></li>
+              <li>
+                <a href="https://github.com/Grant05" class="fa-github"></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/grant-kang-172b59148/" class="fa-linkedin"></a>
+              </li>
             </ul>
           </div>
 
           <!-- DAVID -->
-          <h3 class="wow fadeInDown delay-06s">Grant Kang</h3>
-          <span class="wow fadeInDown delay-06s">Lead Front-End Engineer @ <a href="https://www.quze.io/">Quartz Insights</a></span>
-          <p class="wow fadeInDown delay-06s">Breaker of Bugs<br>(Builder of Bugs)</p>
+          <h3 class="wow fadeInDown delay-06s">
+            Grant Kang
+          </h3>
+          <span class="wow fadeInDown delay-06s">
+            Lead Front-End Engineer @
+            <a href="https://www.quze.io/">
+              Quartz Insights
+            </a>
+          </span>
+          <p class="wow fadeInDown delay-06s">
+            Breaker of Bugs
+            <br>(Builder of Bugs)
+          </p>
         </div>
         <div class="team-leader-box">
           <div class="team-leader wow fadeInDown delay-09s">
-            <div class="team-leader-shadow"><a href="#"></a></div>
+            <div class="team-leader-shadow">
+              <a href="#"></a>
+            </div>
             <img src="img/david-img.png" alt="David Sally">
             <ul>
-              <li><a href="https://github.com/davidcsally" class="fa-github"></a></li>
-              <li><a href="https://www.linkedin.com/in/david-sally/" class="fa-linkedin"></a></li>
+              <li>
+                <a href="https://github.com/davidcsally" class="fa-github"></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/david-sally/" class="fa-linkedin"></a>
+              </li>
             </ul>
           </div>
 
-          <h3 class="wow fadeInDown delay-09s">David Sally</h3>
-          <span class="wow fadeInDown delay-09s">Full Stack Engineer @ <a href="https://www.medcircle.com">MedCircle</a></span>
-          <p class="wow fadeInDown delay-09s">Something something Bootstrap template 👀</p>
+          <h3 class="wow fadeInDown delay-09s">
+            David Sally
+          </h3>
+          <span class="wow fadeInDown delay-09s">
+            Full Stack Engineer @
+            <a href="https://www.medcircle.com">
+              MedCircle
+            </a>
+          </span>
+          <p class="wow fadeInDown delay-09s">
+            Something something Bootstrap template 👀
+          </p>
         </div>
       </div>
     </div>
@@ -360,19 +440,27 @@
               <div class="validation"></div>
             </div>
 
-            <div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
+            <div class="text-center">
+              <button type="submit" class="input-btn">
+                Send Message
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </section>
   </div>
-<!-- Contact Form End -->
+  <!-- Contact Form End -->
 
+  <!-- Typing Section Begin -->
   <section class="typing">
-    <div class='console-container'><span id='text'></span>
+    <div class='console-container'>
+      <span id='text'></span>
       <div class='console-underscore' id='console'>&#95;</div>
     </div>
   </section>
+  <!-- Typing Section End -->
+
   <script type="text/javascript" src="build/bundle.js"></script>
 
   <script type="text/javascript">

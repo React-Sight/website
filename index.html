@@ -98,7 +98,9 @@
     })(window, document);
 
     amplitude.getInstance().init("2a4335eb07211f28ecc3964934659998");
-    amplitude.getInstance().logEvent('PageView');
+    window.addEventListener('DOMContentLoaded', () => {
+      amplitude.getInstance().logEvent('PageView');
+    });
   </script>
 
 

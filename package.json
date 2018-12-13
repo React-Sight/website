@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -w",
+    "build": "webpack -p",
     "start": "webpack -w"
   },
   "repository": {
@@ -20,7 +20,8 @@
   "homepage": "https://github.com/davidcsally/website#readme",
   "dependencies": {},
   "devDependencies": {
-    "json-formatter-js": "^2.2.0",
-    "webpack": "^3.6.0"
+    "json-formatter-js": "2.2.1",
+    "webpack": "4.27.1",
+    "webpack-cli": "3.1.2"
   }
 }

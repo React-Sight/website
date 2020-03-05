@@ -20,7 +20,7 @@
   "homepage": "https://github.com/davidcsally/website#readme",
   "dependencies": {},
   "devDependencies": {
-    "json-formatter-js": "2.2.1",
+    "json-formatter-js": "2.3.4",
     "webpack": "4.27.1",
     "webpack-cli": "3.1.2"
   }

@@ -21,7 +21,7 @@
   "dependencies": {},
   "devDependencies": {
     "json-formatter-js": "2.2.1",
-    "webpack": "4.27.1",
+    "webpack": "4.44.0",
     "webpack-cli": "3.1.2"
   }
 }
